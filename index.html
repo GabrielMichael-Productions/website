@@ -46,33 +46,33 @@
         font-weight: 300;
     }
 
-    /* --- REFINED BACKGROUND SECTION --- */
-    .bg-section {
+    /* --- UNIFIED DROPDOWN STYLES --- */
+    .dropdown-section {
         max-width: 650px;
-        margin: 0 auto 60px auto;
+        margin: 0 auto;
         text-align: left;
-        border-top: 1px solid #1a1a1a; /* Very subtle divider */
     }
     details {
         cursor: pointer;
-        padding: 25px 0;
+        padding: 20px 0;
+        border-top: 1px solid #1a1a1a;
         transition: 0.3s;
     }
     summary {
         list-style: none;
         display: flex;
-        justify-content: center; /* Centered to match your layout */
+        justify-content: center;
         align-items: center;
-        color: #666; /* Dimmest grey so it stays in the background */
+        color: #666;
         font-weight: bold;
         letter-spacing: 3px;
         font-size: 0.75rem;
         text-transform: uppercase;
         transition: 0.3s;
+        outline: none;
     }
     summary::-webkit-details-marker { display: none; }
     
-    /* Subtle Gold only on hover */
     summary:hover { color: #d4af37; }
     details[open] summary { color: #d4af37; margin-bottom: 20px; }
 
@@ -87,37 +87,32 @@
     }
     details[open] .chevron { transform: rotate(-135deg); border-color: #d4af37; }
 
-    .bg-content {
+    .content-box {
         color: #888;
         font-size: 0.95rem;
         line-height: 1.7;
-        padding: 0 10px;
+        padding: 0 10px 20px 10px;
     }
-    .bg-content h3 {
+    .content-box h3 {
         color: #fff;
-        font-size: 1rem;
-        margin: 0 0 5px 0;
+        font-size: 0.9rem;
+        margin: 0 0 10px 0;
         letter-spacing: 1px;
         text-transform: uppercase;
+        border-bottom: 1px solid #222;
+        padding-bottom: 5px;
     }
-    .location-tag {
-        color: #555;
-        font-size: 0.8rem;
-        display: block;
+    .project-item {
         margin-bottom: 15px;
-    }
-    .exp-tags {
-        color: #aaa;
-        font-weight: bold;
-        font-size: 0.7rem;
-        letter-spacing: 1px;
         display: block;
-        margin-bottom: 15px;
-        border-left: 1px solid #d4af37;
-        padding-left: 12px;
     }
-    /* --- END REFINED SECTION --- */
+    .project-title { color: #fff; font-weight: bold; }
+    .project-role { color: #d4af37; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+    .project-status { color: #555; font-size: 0.8rem; font-style: italic; margin-left: 5px; }
 
+    /* --- END DROPDOWN STYLES --- */
+
+    .links { margin-top: 40px; }
     .links a { 
         color: #ffffff !important; 
         text-decoration: none; 
@@ -144,33 +139,60 @@
         
         <p>I work with indie films to refine story, solve production challenges, and stabilize projects from development through production. I specialize in identifying gaps, streamlining workflows, and providing strategic guidance to keep projects efficient, safe, and creatively strong.</p>
 
-        <div class="bg-section">
+        <div class="dropdown-section">
+            
+            <details>
+                <summary>
+                    Recent Projects
+                    <div class="chevron"></div>
+                </summary>
+                <div class="content-box">
+                    <div class="project-item">
+                        <span class="project-title">Gallo's Grave</span> 
+                        <span class="project-role">— Assistant Director</span>
+                        <span class="project-status">(Currently Filming)</span>
+                    </div>
+                    <div class="project-item">
+                        <span class="project-title">Tucson Nights</span> 
+                        <span class="project-role">— Producer / 2nd AD</span>
+                    </div>
+                    <div class="project-item">
+                        <span class="project-title">The Ascendency</span> 
+                        <span class="project-role">— Associate Producer</span>
+                    </div>
+                </div>
+            </details>
+
             <details>
                 <summary>
                     Professional Background 
                     <div class="chevron"></div>
                 </summary>
-                <div class="bg-content">
-                    <h3>Film & Television Production Experience</h3>
-                    <span class="location-tag">Los Angeles, California</span>
-                    
-                    <span class="exp-tags">P.A. • GRIP • SAFETY • ATHLETICS • STUNT COORDINATOR</span>
-                    
+                <div class="content-box">
+                    <h3>Industry Foundation</h3>
                     <p style="margin-bottom: 15px;">
-                        Working alongside producers, writers, and crews on television, pilots, and independent films—both in production & creative offices and on set—has given me a comprehensive view of how projects operate. 
+                        Extensive mid-90s experience across Los Angeles television pilots and independent features. 
+                        With a foundation in <strong>Martial Arts, Athletics, and Stunt Coordination</strong>, I bring a hands-on, strategic perspective to safety and execution on modern indie sets.
                     </p>
-                    <p>
-                        With a background in martial arts, athletics, and stunt coordination, I bring a hands-on, strategic perspective to indie films. I focus on identifying potential gaps and elevating execution, ensuring projects are efficient, safe, and narratively compelling.
+                    <p style="font-size: 0.85rem; color: #555; font-style: italic;">
+                        Experience includes: P.A. • Grip • Safety • Stunt Dept. (Los Angeles, CA)
                     </p>
                 </div>
             </details>
+
         </div>
+        
         <div class="links">
             <a href="https://www.facebook.com/profile.php?id=61574917875916" target="_blank">FACEBOOK PAGE</a>
             <a href="https://www.facebook.com/groups/567061830987662" target="_blank">FACEBOOK GROUP</a>
             <a href="https://www.instagram.com/gabrielmichaelproductions/" target="_blank">INSTAGRAM</a>
             <a href="mailto:gabrielmichaelproductions@gmail.com">EMAIL</a>
         </div>
+        
+        <div class="footer">© 2026 GABRIEL MICHAEL PRODUCTIONS</div>
+    </div>
+</body>
+</html>
         
         <div class="footer">© 2026 GABRIEL MICHAEL PRODUCTIONS</div>
     </div>

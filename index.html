@@ -37,7 +37,6 @@
         font-size: 0.85rem; 
         margin-bottom: 30px; 
     }
-    /* This dims the bio slightly so it's not "too white" */
     p { 
         color: #a0a0a0; 
         line-height: 1.8; 
@@ -46,7 +45,69 @@
         margin: 0 auto 40px auto; 
         font-weight: 300;
     }
-    /* Professional Link Styling */
+
+    /* --- NEW BACKGROUND SECTION STYLES --- */
+    .bg-section {
+        max-width: 650px;
+        margin: 0 auto 50px auto;
+        text-align: left; /* Aligns history text for easier reading */
+        border-top: 1px solid #222;
+    }
+    details {
+        cursor: pointer;
+        padding: 20px 0;
+    }
+    summary {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #d4af37; /* Gold color to match your theme */
+        font-weight: bold;
+        letter-spacing: 2px;
+        font-size: 0.85rem;
+        text-transform: uppercase;
+    }
+    summary::-webkit-details-marker { display: none; }
+    .chevron {
+        width: 8px;
+        height: 8px;
+        border-right: 2px solid #d4af37;
+        border-bottom: 2px solid #d4af37;
+        transform: rotate(45deg);
+        transition: 0.3s;
+    }
+    details[open] .chevron { transform: rotate(-135deg); }
+    .bg-content {
+        margin-top: 20px;
+        color: #a0a0a0;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    .bg-content h3 {
+        color: #fff;
+        font-size: 1.1rem;
+        margin: 0 0 5px 0;
+        letter-spacing: 1px;
+    }
+    .location-tag {
+        color: #666;
+        font-size: 0.8rem;
+        display: block;
+        margin-bottom: 15px;
+    }
+    .exp-tags {
+        color: #fff;
+        font-weight: bold;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 15px;
+        border-left: 2px solid #d4af37;
+        padding-left: 10px;
+    }
+    /* --- END NEW STYLES --- */
+
     .links a { 
         color: #ffffff !important; 
         text-decoration: none; 
@@ -55,9 +116,8 @@
         font-size: 0.8rem;
         letter-spacing: 2px;
         transition: 0.4s; 
-        opacity: 0.8; /* Makes them slightly softer until hovered */
+        opacity: 0.8; 
     }
-    /* Subtle Gold Hover effect to match the Banner text */
     .links a:hover { 
         opacity: 1;
         color: #d4af37 !important; 
@@ -73,14 +133,42 @@
         <div class="role">Consulting Producer | Story & Production Strategy</div>
         
         <p>I work with indie films to refine story, solve production challenges, and stabilize projects from development through production. I specialize in identifying gaps, streamlining workflows, and providing strategic guidance to keep projects efficient, safe, and creatively strong.</p>
+
+        <!-- START PROFESSIONAL BACKGROUND SECTION -->
+        <div class="bg-section">
+            <details>
+                <summary>
+                    Professional Background 
+                    <div class="chevron"></div>
+                </summary>
+                <div class="bg-content">
+                    <h3>Film & Television Production Experience</h3>
+                    <span class="location-tag">Los Angeles, California</span>
+                    
+                    <span class="exp-tags">P.A. • GRIP • SAFETY • ATHLETICS • STUNT COORDINATOR</span>
+                    
+                    <p style="margin: 0 0 15px 0; font-size: 0.95rem;">
+                        Working alongside producers, writers, and crews on television, pilots, and independent films—both in production & creative offices and on set—has given me a comprehensive view of how projects operate. 
+                    </p>
+                    <p style="margin: 0; font-size: 0.95rem;">
+                        With a background in martial arts, athletics, and stunt coordination, I bring a hands-on, strategic perspective to indie films. I focus on identifying potential gaps and elevating execution, ensuring projects are efficient, safe, and narratively compelling.
+                    </p>
+                </div>
+            </details>
+        </div>
+        <!-- END PROFESSIONAL BACKGROUND SECTION -->
         
         <div class="links">
-    <a href="https://www.facebook.com/profile.php?id=61574917875916" target="_blank">FACEBOOK PAGE</a>
-    <a href="https://www.facebook.com/groups/567061830987662" target="_blank">FACEBOOK GROUP</a>
-    <a href="https://www.instagram.com/gabrielmichaelproductions/" target="_blank">INSTAGRAM</a>
-    <a href="mailto:gabrielmichaelproductions@gmail.com">EMAIL</a>
-</div>
-
+            <a href="https://www.facebook.com/profile.php?id=61574917875916" target="_blank">FACEBOOK PAGE</a>
+            <a href="https://www.facebook.com/groups/567061830987662" target="_blank">FACEBOOK GROUP</a>
+            <a href="https://www.instagram.com/gabrielmichaelproductions/" target="_blank">INSTAGRAM</a>
+            <a href="mailto:gabrielmichaelproductions@gmail.com">EMAIL</a>
+        </div>
+        
+        <div class="footer">© 2026 GABRIEL MICHAEL PRODUCTIONS</div>
+    </div>
+</body>
+</html>
         <div class="footer">© 2026 GABRIEL MICHAEL PRODUCTIONS</div>
     </div>
 </body>

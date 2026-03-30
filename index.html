@@ -46,67 +46,77 @@
         font-weight: 300;
     }
 
-    /* --- NEW BACKGROUND SECTION STYLES --- */
+    /* --- REFINED BACKGROUND SECTION --- */
     .bg-section {
         max-width: 650px;
-        margin: 0 auto 50px auto;
-        text-align: left; /* Aligns history text for easier reading */
-        border-top: 1px solid #222;
+        margin: 0 auto 60px auto;
+        text-align: left;
+        border-top: 1px solid #1a1a1a; /* Very subtle divider */
     }
     details {
         cursor: pointer;
-        padding: 20px 0;
+        padding: 25px 0;
+        transition: 0.3s;
     }
     summary {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: center; /* Centered to match your layout */
         align-items: center;
-        color: #d4af37; /* Gold color to match your theme */
+        color: #666; /* Dimmest grey so it stays in the background */
         font-weight: bold;
-        letter-spacing: 2px;
-        font-size: 0.85rem;
+        letter-spacing: 3px;
+        font-size: 0.75rem;
         text-transform: uppercase;
-    }
-    summary::-webkit-details-marker { display: none; }
-    .chevron {
-        width: 8px;
-        height: 8px;
-        border-right: 2px solid #d4af37;
-        border-bottom: 2px solid #d4af37;
-        transform: rotate(45deg);
         transition: 0.3s;
     }
-    details[open] .chevron { transform: rotate(-135deg); }
+    summary::-webkit-details-marker { display: none; }
+    
+    /* Subtle Gold only on hover */
+    summary:hover { color: #d4af37; }
+    details[open] summary { color: #d4af37; margin-bottom: 20px; }
+
+    .chevron {
+        width: 6px;
+        height: 6px;
+        border-right: 1px solid #444;
+        border-bottom: 1px solid #444;
+        transform: rotate(45deg);
+        margin-left: 15px;
+        transition: 0.3s;
+    }
+    details[open] .chevron { transform: rotate(-135deg); border-color: #d4af37; }
+
     .bg-content {
-        margin-top: 20px;
-        color: #a0a0a0;
+        color: #888;
         font-size: 0.95rem;
         line-height: 1.7;
+        padding: 0 10px;
     }
     .bg-content h3 {
         color: #fff;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 0 0 5px 0;
         letter-spacing: 1px;
+        text-transform: uppercase;
     }
     .location-tag {
-        color: #666;
+        color: #555;
         font-size: 0.8rem;
         display: block;
         margin-bottom: 15px;
     }
     .exp-tags {
-        color: #fff;
+        color: #aaa;
         font-weight: bold;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         letter-spacing: 1px;
         display: block;
         margin-bottom: 15px;
-        border-left: 2px solid #d4af37;
-        padding-left: 10px;
+        border-left: 1px solid #d4af37;
+        padding-left: 12px;
     }
-    /* --- END NEW STYLES --- */
+    /* --- END REFINED SECTION --- */
 
     .links a { 
         color: #ffffff !important; 
@@ -122,7 +132,7 @@
         opacity: 1;
         color: #d4af37 !important; 
     }
-    .footer { margin-top: 60px; font-size: 0.7rem; color: #444; letter-spacing: 1px; }
+    .footer { margin-top: 80px; font-size: 0.65rem; color: #333; letter-spacing: 2px; text-transform: uppercase; }
 </style>
 </head>
 <body>
@@ -134,7 +144,6 @@
         
         <p>I work with indie films to refine story, solve production challenges, and stabilize projects from development through production. I specialize in identifying gaps, streamlining workflows, and providing strategic guidance to keep projects efficient, safe, and creatively strong.</p>
 
-        <!-- START PROFESSIONAL BACKGROUND SECTION -->
         <div class="bg-section">
             <details>
                 <summary>
@@ -147,17 +156,15 @@
                     
                     <span class="exp-tags">P.A. • GRIP • SAFETY • ATHLETICS • STUNT COORDINATOR</span>
                     
-                    <p style="margin: 0 0 15px 0; font-size: 0.95rem;">
+                    <p style="margin-bottom: 15px;">
                         Working alongside producers, writers, and crews on television, pilots, and independent films—both in production & creative offices and on set—has given me a comprehensive view of how projects operate. 
                     </p>
-                    <p style="margin: 0; font-size: 0.95rem;">
+                    <p>
                         With a background in martial arts, athletics, and stunt coordination, I bring a hands-on, strategic perspective to indie films. I focus on identifying potential gaps and elevating execution, ensuring projects are efficient, safe, and narratively compelling.
                     </p>
                 </div>
             </details>
         </div>
-        <!-- END PROFESSIONAL BACKGROUND SECTION -->
-        
         <div class="links">
             <a href="https://www.facebook.com/profile.php?id=61574917875916" target="_blank">FACEBOOK PAGE</a>
             <a href="https://www.facebook.com/groups/567061830987662" target="_blank">FACEBOOK GROUP</a>
@@ -165,10 +172,6 @@
             <a href="mailto:gabrielmichaelproductions@gmail.com">EMAIL</a>
         </div>
         
-        <div class="footer">© 2026 GABRIEL MICHAEL PRODUCTIONS</div>
-    </div>
-</body>
-</html>
         <div class="footer">© 2026 GABRIEL MICHAEL PRODUCTIONS</div>
     </div>
 </body>

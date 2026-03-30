@@ -31,11 +31,11 @@
         color: #ffffff; 
     }
     .location-header {
-        color: #C0AC8A; /* New color matching image: subtle antique gold */
-        text-transform: uppercase;
-        letter-spacing: 4px;
-        font-size: 0.75rem;
-        margin-bottom: 10px;
+        color: #C0AC8A; 
+        text-transform: uppercase; 
+        letter-spacing: 4px; 
+        font-size: 0.75rem; 
+        margin-bottom: 10px; 
         font-weight: bold;
     }
     .role { 
@@ -54,7 +54,7 @@
         font-weight: 300;
     }
 
-    /* --- UNIFIED DROPDOWN STYLES --- */
+    /* --- DROPDOWN STYLES --- */
     .dropdown-section {
         max-width: 650px;
         margin: 0 auto;
@@ -71,7 +71,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #666;
+        color: #777; /* Brightened slightly for better legibility */
         font-weight: bold;
         letter-spacing: 3px;
         font-size: 0.75rem;
@@ -81,14 +81,14 @@
     }
     summary::-webkit-details-marker { display: none; }
     
-    summary:hover { color: #C0AC8A; } /* Matching hover */
-    details[open] summary { color: #C0AC8A; margin-bottom: 20px; } /* Matching open */
+    summary:hover { color: #C0AC8A; } 
+    details[open] summary { color: #C0AC8A; margin-bottom: 20px; }
 
     .chevron {
         width: 6px;
         height: 6px;
-        border-right: 1px solid #444;
-        border-bottom: 1px solid #444;
+        border-right: 1px solid #555;
+        border-bottom: 1px solid #555;
         transform: rotate(45deg);
         margin-left: 15px;
         transition: 0.3s;
@@ -96,7 +96,7 @@
     details[open] .chevron { transform: rotate(-135deg); border-color: #C0AC8A; }
 
     .content-box {
-        color: #888;
+        color: #b0b0b0; /* Brightened text for better reading */
         font-size: 0.95rem;
         line-height: 1.7;
         padding: 0 10px 20px 10px;
@@ -104,11 +104,17 @@
     .content-box h3 {
         color: #fff;
         font-size: 0.9rem;
-        margin: 0 0 10px 0;
+        margin: 0 0 5px 0;
         letter-spacing: 1px;
         text-transform: uppercase;
-        border-bottom: 1px solid #222;
-        padding-bottom: 5px;
+    }
+    .location-tag {
+        color: #666;
+        font-size: 0.8rem;
+        display: block;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
     .project-item {
         margin-bottom: 15px;
@@ -116,7 +122,7 @@
     }
     .project-title { color: #fff; font-weight: bold; }
     .project-role { color: #C0AC8A; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
-    .project-status { color: #555; font-size: 0.8rem; font-style: italic; margin-left: 5px; }
+    .project-status { color: #666; font-size: 0.8rem; font-style: italic; margin-left: 5px; }
 
     /* --- END DROPDOWN STYLES --- */
 
@@ -155,7 +161,7 @@
                     Recent Projects
                     <div class="chevron"></div>
                 </summary>
-                <div class="content-box">
+                <div class="content-box" style="border-bottom: 1px solid #222;">
                     <div class="project-item">
                         <span class="project-title">Gallo's Grave</span> 
                         <span class="project-role">— Assistant Director</span>
@@ -180,13 +186,19 @@
                     <div class="chevron"></div>
                 </summary>
                 <div class="content-box">
-                    <h3>Industry Foundation</h3>
-                    <p style="margin-bottom: 15px;">
-                        Extensive mid-90s experience across Los Angeles television pilots and independent features. 
-                        With a foundation in <strong>Martial Arts, Athletics, and Stunt Coordination</strong>, I bring a hands-on, strategic perspective to safety and execution on modern indie sets.
+                    <h3>Film & Television Production Experience</h3>
+                    <span class="location-tag">Los Angeles, California</span>
+                    
+                    <p style="color: #C0AC8A; font-weight: bold; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 15px; text-transform: uppercase;">
+                        P.A., Grip, Safety, Athletics and Stunt Coordinator
                     </p>
-                    <p style="font-size: 0.85rem; color: #555; font-style: italic;">
-                        Experience includes: P.A. • Grip • Safety • Stunt Dept. (Los Angeles, CA)
+                    
+                    <p style="margin-bottom: 15px; font-size: 0.95rem;">
+                        Working alongside producers, writers, and crews on television, pilots, and independent films—both in production & creative offices and on set—has given me a comprehensive view of how projects operate. 
+                    </p>
+                    
+                    <p style="margin: 0; font-size: 0.95rem;">
+                        With a background in martial arts, athletics, and stunt coordination, and experience on larger-scale productions, I bring a hands-on, strategic perspective to indie films. I focus on identifying potential gaps, streamlining workflows, and elevating execution, ensuring projects are efficient, safe, and narratively compelling.
                     </p>
                 </div>
             </details>
